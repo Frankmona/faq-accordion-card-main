@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+}
+
+body{
+    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+}
+.card{
+    height: 80vh;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    gap: 5rem;
+    /* align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;   
+}
+.img_pattern{
+    width: 59%;
+    height: 100%;
+    margin-left: -100px;
+}
+.img_illustration{
+    width: 50%;
+    height: 60%;
+    margin-left: -600px;
+    margin-top: 100px;
+  
+}
+.title{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: hsl(238, 29%, 16%);
+}
+article{
+    Font-size: 14px
+}
+.section-questions{
+    font-family: 'Kumbh Sans', sans-serif;
+   padding-left: 30px;
+   height: 80vh;
+   width: 40%;
+   /* background-color: aqua; */
+}
+
+.question-title{
+  display: flex;
+  /* gap: 3rem; */
+  justify-content: space-between;
+  padding: 15px;
+}
+.question-btn{
+  color: brown;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.question-text{
+  padding: 5px;
+  margin: 3px;
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+}
+/* hide text */
+.question-text {
+    display: none;
+  }
+  .show-text .question-text {
+    display: block;
+  }
+  .minus-icon {
+    display: none;
+  }
+
+  .show-text .minus-icon {
+    display: inline;
+  }
+
+
+  .show-text .plus-icon {
+    display: none;
+  }
+  a{
+    color:hsl(238, 29%, 16%);
+    text-decoration: none;
+  }
+  a:hover{
+    color: hsl(14, 88%, 65%);
+  }
+
+@media screen and (max-width: 600px) {
+
+  .card{
+    height: 70vh;
+    width: 92%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5rem; */
+}
+
+.img_pattern{
+  width: 10%;
+  height: 10%;
+  margin-left: 10px;
+}
+.img_illustration{
+  width: 10%;
+  height: 10%;
+  margin-left: -600px;
+  margin-top: 100px;
+}
+}
